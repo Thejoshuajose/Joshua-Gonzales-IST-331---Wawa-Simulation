@@ -1,0 +1,14 @@
+﻿<Window x:Name="wnWawaSimulation" x:Class="Joshua_Gonzales___IST_331___Wawa_Simulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
+        mc:Ignorable="d"
+        Title="Gonzales _ Wawa Simulation" Height="555" Width="943" ResizeMode="NoResize">
+    <Grid Margin="0,-4,0,-2" Background="#FFA7A3A3">
+        <ListBox x:Name="lstMainWawaReciept" HorizontalAlignment="Left" Height="408" Margin="650,60,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label x:Name="lblRecieptHeader" Content="              RECIEPT" HorizontalAlignment="Left"  Margin="650,10,0,0" VerticalAlignment="Top" Height="45" Width="293" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="650,473,0,0" TextWrapping="Wrap" Text="Total: $0.00" VerticalAlignment="Top" Width="293" FontSize="24"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Application x:Class="Joshua_Gonzales___IST_331___Wawa_Simulation.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
