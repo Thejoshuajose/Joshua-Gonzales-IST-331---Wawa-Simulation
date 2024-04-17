@@ -16,6 +16,8 @@
     <None Remove="ItemImages\milk.png" />
     <None Remove="ItemImages\snappleApple.jpg" />
     <None Remove="ItemImages\water.png" />
+    <None Remove="TextFiles\ColdBeverages.txt" />
+    <None Remove="TextFiles\HotBeverages.txt" />
     <None Remove="WawaEmblem.png" />
   </ItemGroup>
 
@@ -25,6 +27,8 @@
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\snappleApple.jpg" />
     <Resource Include="ItemImages\water.png" />
+    <Resource Include="TextFiles\ColdBeverages.txt" />
+    <Resource Include="TextFiles\HotBeverages.txt" />
     <Resource Include="WawaEmblem.png" />
   </ItemGroup>
 

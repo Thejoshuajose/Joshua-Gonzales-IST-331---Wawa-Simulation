@@ -1,5 +1,4 @@
-Water~Beverage~Spring Water~2.00~ItemImages/water.png
-Arizona~Beverage~Watermelon Flavored~1.50~ItemImages/arizonaWatermelon.jpg
-Snapple~Beverage~Apple Flavored~2.50~ItemImages/snappleApple.jpg
-Milk~Beverage~Whole Milk~3.00~ItemImages/milk.png
+OolongTea~Best Tea in PA~1.50~ItemImages/oolongTea.jpg
 Hot Chocolate~Hot Chocolate with marshmellows~2.00~ItemImages/hotChocolate.jpg
+Black Coffee~Regular Black Coffee~1.00~ItemImages/blackCoffee.jpeg
+Cappuccino~A cappuccino with a heart in the middle~2.75~ItemImages/cappuccino.jpg
