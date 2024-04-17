@@ -1,0 +1,4 @@
+Water~Beverage~Spring Water~2.00~ItemImages/water.png
+Arizona~Beverage~Watermelon Flavored~1.50~ItemImages/arizonaWatermelon.jpg
+Snapple~Beverage~Apple Flavored~2.50~ItemImages/snappleApple.jpg
+Milk~Beverage~Whole Milk~3.00~ItemImages/milk.png

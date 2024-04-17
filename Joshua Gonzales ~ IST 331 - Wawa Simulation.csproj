@@ -10,12 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="HotBeverages.txt" />
     <None Remove="ItemImages\arizonaWatermelon.jpg" />
     <None Remove="ItemImages\hotChocolate.jpg" />
     <None Remove="ItemImages\milk.png" />
     <None Remove="ItemImages\snappleApple.jpg" />
     <None Remove="ItemImages\water.png" />
-    <None Remove="ItemInformation.txt" />
     <None Remove="WawaEmblem.png" />
   </ItemGroup>
 
@@ -25,7 +25,7 @@
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\snappleApple.jpg" />
     <Resource Include="ItemImages\water.png" />
-    <Resource Include="ItemInformation.txt" />
+    <Resource Include="HotBeverages.txt" />
     <Resource Include="WawaEmblem.png" />
   </ItemGroup>
 
