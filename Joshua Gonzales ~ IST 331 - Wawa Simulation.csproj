@@ -25,7 +25,6 @@
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\snappleApple.jpg" />
     <Resource Include="ItemImages\water.png" />
-    <Resource Include="HotBeverages.txt" />
     <Resource Include="WawaEmblem.png" />
   </ItemGroup>
 
