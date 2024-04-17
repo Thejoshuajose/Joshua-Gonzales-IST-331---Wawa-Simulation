@@ -118,7 +118,10 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void btnHoagies_Click(object sender, RoutedEventArgs e)
         {
-           
+
+           Hoagies wnHoagies = new Hoagies(MainWindowItem);
+            wnHoagies.ShowDialog();
+            
         }
     }
 }

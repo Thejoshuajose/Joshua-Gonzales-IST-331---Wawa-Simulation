@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 {
-    class Item
+    public class Item
     {
         string itemName;
         double itemPrice;

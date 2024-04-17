@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
         mc:Ignorable="d"
         Title="Hoagies" Height="450" Width="800">
-    <Grid Background="#FF575757">
+    <Grid Background="#FF575757" MouseMove="Grid_MouseMove">
         <Image x:Name="imgHoagie1" HorizontalAlignment="Left" Height="126" Margin="49,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
         <Image x:Name="imgHoagie2" HorizontalAlignment="Left" Height="126" Margin="228,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
         <Image x:Name="imgHoagie4" HorizontalAlignment="Left" Height="126" Margin="228,219,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
@@ -23,9 +23,10 @@
         <Button x:Name="btnRemoveHoagie3" Content="Remove" HorizontalAlignment="Left" Margin="133,352,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAddHoagie3" Content="Add" HorizontalAlignment="Left" Margin="47,352,0,0" VerticalAlignment="Top" Width="44"/>
         <TextBox x:Name="txtQuantityHoagie3" HorizontalAlignment="Left" Height="20" Margin="91,352,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center"/>
-        <ListBox x:Name="lstMainWawaReciept" HorizontalAlignment="Left" Height="336" Margin="507,43,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Background="White" SelectionChanged="lstMainWawaReciept_SelectionChanged"/>
+        <ListBox x:Name="lstMainWawaReciept" HorizontalAlignment="Left" Height="336" Margin="507,43,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Background="White"/>
         <Label x:Name="lblRecieptHeader" Content="              RECIEPT" HorizontalAlignment="Left"  Margin="507,2,0,0" VerticalAlignment="Top" Height="38" Width="293" FontSize="24" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Height="41" Margin="507,383,0,0" TextWrapping="Wrap" Text="Total: $0.00" VerticalAlignment="Top" Width="293" FontSize="24" Background="White"/>
+        <Button x:Name="btnBackToMain" Content="Back" HorizontalAlignment="Left" Height="31" Margin="429,388,0,0" VerticalAlignment="Top" Width="59" Click="btnBackToMain_Click"/>
 
     </Grid>
 </Window>
