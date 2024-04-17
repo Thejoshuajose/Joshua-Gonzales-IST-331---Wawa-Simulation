@@ -18,7 +18,23 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         public List<string> itemCart = new List<string>();
         public List<double> itemPriceCart = new List<double>();
 
+        public Item()
+        {
+            itemName = string.Empty;
+            itemPrice = 0;
+            itemDescription = string.Empty;
+            itemType = string.Empty;
+            itemImgPath = string.Empty;
+            itemCart = new List<string>();
+        }
 
+        public Item(Item item)
+        {
+            this.itemName = item.itemName;
+            this.itemPrice = item.itemPrice;
+            this.itemDescription = item.itemDescription;
+            this.itemType = item.itemType;
+        }
         public Item(string itemName, string itemDescription, string itemType, double itemPrice, string itemImgPath)
         {
             this.itemName = itemName;

@@ -11,18 +11,22 @@
 
   <ItemGroup>
     <None Remove="ItemImages\arizonaWatermelon.jpg" />
+    <None Remove="ItemImages\hotChocolate.jpg" />
     <None Remove="ItemImages\milk.png" />
     <None Remove="ItemImages\snappleApple.jpg" />
     <None Remove="ItemImages\water.png" />
     <None Remove="ItemInformation.txt" />
+    <None Remove="WawaEmblem.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="ItemImages\arizonaWatermelon.jpg" />
+    <Resource Include="ItemImages\hotChocolate.jpg" />
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\snappleApple.jpg" />
     <Resource Include="ItemImages\water.png" />
     <Resource Include="ItemInformation.txt" />
+    <Resource Include="WawaEmblem.png" />
   </ItemGroup>
 
 </Project>
