@@ -27,7 +27,11 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         public List<string> itemPath = new List<string>();
         public List<string> items = new List<string>();
         public List<string> itemCart = new List<string>();
-        Item HoagieWindowItem = new Item();
+        public Item HoagieWindowItem = new Item();
+        public int item1count = 0;
+        public int item2count = 0;
+        public int item3count = 0;
+        public int item4count = 0;
         public bool imgINIT = false;
 
         public Hoagies(Item MainWindowItem)
@@ -42,7 +46,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
             String line;
             try
             {
-                StreamReader reader = new StreamReader("/TextFiles/Hoagies.txt");
+                StreamReader reader = new StreamReader("TextFiles/Hoagies.txt");
                 line = reader.ReadLine();
                 while (line != null)
                 {
@@ -79,7 +83,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void Grid_MouseMove(object sender, MouseEventArgs e)
         {
-            /*if (imgHoagie1.IsInitialized||imgINIT == true)
+            if (imgHoagie1.IsInitialized && imgINIT == true)
             {
                 BitmapImage hoagieImg1 = new BitmapImage();
                 hoagieImg1.BeginInit();
@@ -108,7 +112,180 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg4.EndInit();
                 imgHoagie4.Stretch = Stretch.UniformToFill;
                 imgHoagie4.Source = hoagieImg4;
-            }*/
+            }
+
+        }
+
+        private void btnAddHoagie1_Click(object sender, RoutedEventArgs e)
+        {
+
+            item1count += 1;
+            txtQuantityHoagie1.Text = item1count.ToString();
+            HoagieWindowItem.AddToCart(itemNames[0], itemPrice[0]);
+
+
+            if (item1count == 0)
+            {
+                btnRemoveHoagie1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveHoagie1.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnRemoveHoagie1_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (item1count > 0)
+            {
+                item1count -= 1;
+                txtQuantityHoagie1.Text = item1count.ToString();
+                HoagieWindowItem.RemoveFromCart(itemNames[0], itemPrice[0]);
+            }
+
+            if (item1count == 0)
+            {
+                btnRemoveHoagie1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveHoagie1.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnAddHoagie2_Click(object sender, RoutedEventArgs e)
+        {
+     
+            item2count += 1;
+            txtQuantityHoagie2.Text = item2count.ToString();
+            HoagieWindowItem.AddToCart(itemNames[1], itemPrice[1]);
+
+            if (item2count == 0)
+            {
+                btnRemoveHoagie2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveHoagie2.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnRemoveHoagie2_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (item2count > 0)
+            {
+                item2count -= 1;
+                txtQuantityHoagie2.Text = item2count.ToString();
+                HoagieWindowItem.RemoveFromCart(itemNames[1], itemPrice[1]);
+            }
+
+            if (item2count == 0)
+            {
+                btnRemoveHoagie2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveHoagie2.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnAddHoagie3_Click(object sender, RoutedEventArgs e)
+        {
+
+            item3count += 1;
+            txtQuantityHoagie3.Text = item3count.ToString();
+            HoagieWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+
+            if (item3count == 0)
+            {
+                btnRemoveHoagie3.IsEnabled = false;
+            }
+            else if (item3count >= 1)
+            {
+                btnRemoveHoagie3.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnRemoveHoagie3_Click(object sender, RoutedEventArgs e)
+        {
+            if (item3count > 0)
+            {
+                item3count -= 1;
+                txtQuantityHoagie3.Text = item3count.ToString();
+                HoagieWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+            }
+
+            if (item3count == 0)
+            {
+                btnRemoveHoagie3.IsEnabled = false;
+            }
+
+            else if (item3count >= 1)
+            {
+                btnRemoveHoagie3.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnAddHoagie4_Click(object sender, RoutedEventArgs e)
+        {
+
+            item4count += 1;
+            txtQuantityHoagie4.Text = item4count.ToString();
+            HoagieWindowItem.RemoveFromCart(itemNames[3], itemPrice[3]);
+
+            if (item4count == 0)
+            {
+                btnRemoveHoagie4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveHoagie4.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
+        }
+
+        private void btnRemoveHoagie4_Click(object sender, RoutedEventArgs e)
+        {
+            if (item4count > 0)
+            {
+                item4count -= 1;
+                txtQuantityHoagie4.Text = item4count.ToString();
+                HoagieWindowItem.RemoveFromCart(itemNames[3], itemPrice[3]);
+            }
+
+            if (item4count == 0)
+            {
+                btnRemoveHoagie4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveHoagie4.IsEnabled = true;
+            }
+
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+
         }
     }
 }

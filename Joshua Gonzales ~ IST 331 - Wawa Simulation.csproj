@@ -12,9 +12,13 @@
   <ItemGroup>
     <None Remove="HotBeverages.txt" />
     <None Remove="ItemImages\arizonaWatermelon.jpg" />
+    <None Remove="ItemImages\bltHoagie.jpg" />
+    <None Remove="ItemImages\hamHoagie.jpg" />
     <None Remove="ItemImages\hotChocolate.jpg" />
+    <None Remove="ItemImages\meatballHoagie.jpg" />
     <None Remove="ItemImages\milk.png" />
     <None Remove="ItemImages\snappleApple.jpg" />
+    <None Remove="ItemImages\turkeyHoagie.jpg" />
     <None Remove="ItemImages\water.png" />
     <None Remove="TextFiles\ColdBeverages.txt" />
     <None Remove="TextFiles\Hoagies.txt" />
@@ -24,9 +28,13 @@
 
   <ItemGroup>
     <Resource Include="ItemImages\arizonaWatermelon.jpg" />
+    <Resource Include="ItemImages\bltHoagie.jpg" />
+    <Resource Include="ItemImages\hamHoagie.jpg" />
     <Resource Include="ItemImages\hotChocolate.jpg" />
+    <Resource Include="ItemImages\meatballHoagie.jpg" />
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\snappleApple.jpg" />
+    <Resource Include="ItemImages\turkeyHoagie.jpg" />
     <Resource Include="ItemImages\water.png" />
     <Resource Include="TextFiles\ColdBeverages.txt" />
     <Resource Include="TextFiles\Hoagies.txt" />
