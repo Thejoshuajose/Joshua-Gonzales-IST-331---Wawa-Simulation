@@ -93,7 +93,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
         {
-
+            SoupsAndSides wnSoupsAndSides = new SoupsAndSides(MainWindowItem);
+            wnSoupsAndSides.ShowDialog();
         }
     }
 }

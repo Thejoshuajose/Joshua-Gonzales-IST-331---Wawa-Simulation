@@ -15,8 +15,12 @@
     <None Remove="ItemImages\blackCoffee.jpeg" />
     <None Remove="ItemImages\bltHoagie.jpg" />
     <None Remove="ItemImages\cappuccino.jpg" />
+    <None Remove="ItemImages\chickenNoodleSoup.jpg" />
+    <None Remove="ItemImages\coleSlaw.jpg" />
+    <None Remove="ItemImages\frenchFries.jpg" />
     <None Remove="ItemImages\hamHoagie.jpg" />
     <None Remove="ItemImages\hotChocolate.jpg" />
+    <None Remove="ItemImages\macNcheese.jpg" />
     <None Remove="ItemImages\meatballHoagie.jpg" />
     <None Remove="ItemImages\milk.png" />
     <None Remove="ItemImages\oolongTea.jpg" />
@@ -34,8 +38,12 @@
     <Resource Include="ItemImages\blackCoffee.jpeg" />
     <Resource Include="ItemImages\bltHoagie.jpg" />
     <Resource Include="ItemImages\cappuccino.jpg" />
+    <Resource Include="ItemImages\chickenNoodleSoup.jpg" />
+    <Resource Include="ItemImages\coleSlaw.jpg" />
+    <Resource Include="ItemImages\frenchFries.jpg" />
     <Resource Include="ItemImages\hamHoagie.jpg" />
     <Resource Include="ItemImages\hotChocolate.jpg" />
+    <Resource Include="ItemImages\macNcheese.jpg" />
     <Resource Include="ItemImages\meatballHoagie.jpg" />
     <Resource Include="ItemImages\milk.png" />
     <Resource Include="ItemImages\oolongTea.jpg" />
