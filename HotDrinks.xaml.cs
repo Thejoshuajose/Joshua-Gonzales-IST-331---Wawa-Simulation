@@ -79,6 +79,41 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
             HotDrinksWindowItem.itemCart = itemCart;
             wnHotBeverages.Close();
         }
+        private void Grid_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (imgHotDrink1.IsInitialized && imgINIT == true)
+            {
+                BitmapImage hotDrinkImg1 = new BitmapImage();
+                hotDrinkImg1.BeginInit();
+                hotDrinkImg1.UriSource = new Uri(itemPath[0], UriKind.Relative);
+                hotDrinkImg1.EndInit();
+                imgHotDrink1.Stretch = Stretch.UniformToFill;
+                imgHotDrink1.Source = hotDrinkImg1;
+
+                BitmapImage hotDrinkImg2 = new BitmapImage();
+                hotDrinkImg2.BeginInit();
+                hotDrinkImg2.UriSource = new Uri(itemPath[1], UriKind.Relative);
+                hotDrinkImg2.EndInit();
+                imgHotDrink2.Stretch = Stretch.UniformToFill;
+                imgHotDrink2.Source = hotDrinkImg2;
+
+                BitmapImage hotDrinkImg3 = new BitmapImage();
+                hotDrinkImg3.BeginInit();
+                hotDrinkImg3.UriSource = new Uri(itemPath[2], UriKind.Relative);
+                hotDrinkImg3.EndInit();
+                imgHotDrink3.Stretch = Stretch.UniformToFill;
+                imgHotDrink3.Source = hotDrinkImg3;
+
+                BitmapImage hotDrinkImg4 = new BitmapImage();
+                hotDrinkImg4.BeginInit();
+                hotDrinkImg4.UriSource = new Uri(itemPath[3], UriKind.Relative);
+                hotDrinkImg4.EndInit();
+                imgHotDrink4.Stretch = Stretch.UniformToFill;
+                imgHotDrink4.Source = hotDrinkImg4;
+
+                txtHotDrinkTotal.Text = "Total: $" + HotDrinksWindowItem.GetPriceOfCart();
+            }
+        }
         private void btnAddHotDrink1_Click(object sender, RoutedEventArgs e)
         {
 
@@ -116,40 +151,6 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         }
 
-        private void Grid_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (imgHotDrink1.IsInitialized && imgINIT == true)
-            {
-                BitmapImage hotDrinkImg1 = new BitmapImage();
-                hotDrinkImg1.BeginInit();
-                hotDrinkImg1.UriSource = new Uri(itemPath[0], UriKind.Relative);
-                hotDrinkImg1.EndInit();
-                imgHotDrink1.Stretch = Stretch.UniformToFill;
-                imgHotDrink1.Source = hotDrinkImg1;
-
-                BitmapImage hotDrinkImg2 = new BitmapImage();
-                hotDrinkImg2.BeginInit();
-                hotDrinkImg2.UriSource = new Uri(itemPath[1], UriKind.Relative);
-                hotDrinkImg2.EndInit();
-                imgHotDrink2.Stretch = Stretch.UniformToFill;
-                imgHotDrink2.Source = hotDrinkImg2;
-
-                BitmapImage hotDrinkImg3 = new BitmapImage();
-                hotDrinkImg3.BeginInit();
-                hotDrinkImg3.UriSource = new Uri(itemPath[2], UriKind.Relative);
-                hotDrinkImg3.EndInit();
-                imgHotDrink3.Stretch = Stretch.UniformToFill;
-                imgHotDrink3.Source = hotDrinkImg3;
-
-                BitmapImage hotDrinkImg4 = new BitmapImage();
-                hotDrinkImg4.BeginInit();
-                hotDrinkImg4.UriSource = new Uri(itemPath[3], UriKind.Relative);
-                hotDrinkImg4.EndInit();
-                imgHotDrink4.Stretch = Stretch.UniformToFill;
-                imgHotDrink4.Source = hotDrinkImg4;
-
-                txtHotDrinkTotal.Text = "Total: $" + HotDrinksWindowItem.GetPriceOfCart();
-            }
+        
         }
     }
-}

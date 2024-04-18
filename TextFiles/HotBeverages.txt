@@ -1,4 +1,4 @@
-OolongTea~Best Tea in PA~1.50~ItemImages/oolongTea.jpg
-Hot Chocolate~Hot Chocolate with marshmellows~2.00~ItemImages/hotChocolate.jpg
-Black Coffee~Regular Black Coffee~1.00~ItemImages/blackCoffee.jpeg
-Cappuccino~A cappuccino with a heart in the middle~2.75~ItemImages/cappuccino.jpg
+OolongTea~HotDrink~Best Tea in PA~1.50~ItemImages/oolongTea.jpg
+Hot Chocolate~HotDrink~Hot Chocolate with marshmellows~2.00~ItemImages/hotChocolate.jpg
+Black Coffee~HotDrink~Regular Black Coffee~1.00~ItemImages/blackCoffee.jpeg
+Cappuccino~HotDrink~A cappuccino~2.75~ItemImages/cappuccino.jpg
