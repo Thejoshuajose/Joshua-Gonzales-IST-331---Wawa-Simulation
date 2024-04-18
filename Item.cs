@@ -17,6 +17,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         string itemImgPath;
         public List<string> itemCart = new List<string>();
         public List<double> itemPriceCart = new List<double>();
+        public double itemPriceOfCart;
 
         public Item()
         {
@@ -55,6 +56,21 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         public List<string> GetItemCart()
         {
             return this.itemCart;
+        }
+        public double GetPriceOfCart()
+        {
+            double price = 0;
+            itemPriceOfCart = 0;
+
+
+            for (int i = 0; i < itemPriceCart.Count(); i++)
+            {
+                price = itemPriceCart[i];
+                itemPriceOfCart += price;
+            }
+
+            return itemPriceOfCart;
+
         }
 
         public string GetItemName()

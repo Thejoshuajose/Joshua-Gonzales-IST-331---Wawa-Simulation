@@ -77,8 +77,9 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void btnBackToMain_Click(object sender, RoutedEventArgs e)
         {
-            
+            HoagieWindowItem.itemCart = itemCart;
             wnHoagies.Close();
+            
         }
 
         private void Grid_MouseMove(object sender, MouseEventArgs e)
@@ -112,6 +113,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg4.EndInit();
                 imgHoagie4.Stretch = Stretch.UniformToFill;
                 imgHoagie4.Source = hoagieImg4;
+
+                txtHoagieTotal.Text = "Total: $" + HoagieWindowItem.GetPriceOfCart();
             }
 
         }
@@ -208,7 +211,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
             item3count += 1;
             txtQuantityHoagie3.Text = item3count.ToString();
-            HoagieWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+            HoagieWindowItem.AddToCart(itemNames[2], itemPrice[2]);
+
 
             if (item3count == 0)
             {
@@ -230,6 +234,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 item3count -= 1;
                 txtQuantityHoagie3.Text = item3count.ToString();
                 HoagieWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+
             }
 
             if (item3count == 0)
@@ -244,6 +249,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
             lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
 
+
         }
 
         private void btnAddHoagie4_Click(object sender, RoutedEventArgs e)
@@ -251,7 +257,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
             item4count += 1;
             txtQuantityHoagie4.Text = item4count.ToString();
-            HoagieWindowItem.RemoveFromCart(itemNames[3], itemPrice[3]);
+            HoagieWindowItem.AddToCart(itemNames[3], itemPrice[3]);
 
             if (item4count == 0)
             {

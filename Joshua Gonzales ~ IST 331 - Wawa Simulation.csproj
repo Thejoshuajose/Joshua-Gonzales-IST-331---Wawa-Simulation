@@ -13,6 +13,7 @@
     <None Remove="HotBeverages.txt" />
     <None Remove="ItemImages\arizonaWatermelon.jpg" />
     <None Remove="ItemImages\bltHoagie.jpg" />
+    <None Remove="ItemImages\cappuccino.jpg" />
     <None Remove="ItemImages\hamHoagie.jpg" />
     <None Remove="ItemImages\hotChocolate.jpg" />
     <None Remove="ItemImages\meatballHoagie.jpg" />
@@ -29,6 +30,7 @@
   <ItemGroup>
     <Resource Include="ItemImages\arizonaWatermelon.jpg" />
     <Resource Include="ItemImages\bltHoagie.jpg" />
+    <Resource Include="ItemImages\cappuccino.jpg" />
     <Resource Include="ItemImages\hamHoagie.jpg" />
     <Resource Include="ItemImages\hotChocolate.jpg" />
     <Resource Include="ItemImages\meatballHoagie.jpg" />

@@ -32,7 +32,6 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
 
@@ -47,11 +46,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void Grid_MouseMove(object sender, MouseEventArgs e)
         {
-            if (itemCart.Count != 0)
-            { 
-            lstMainWawaReciept.Items.Clear();
             lstMainWawaReciept.ItemsSource = MainWindowItem.GetItemCart();
-            }
+
         }
 
         private void lstMainWawaReciept_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -63,7 +59,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
             if (MainWindowItem.itemCart.Count != 0)
             {
-                MessageBoxResult result = MessageBox.Show("Checkout", "Do You Want to Check Out" + MainWindowItem.GetItemCart().ToString(), MessageBoxButton.YesNo);
+                MessageBoxResult result = MessageBox.Show("Checkout with: \n" + MainWindowItem.GetItemCart().ToString(), "Do You Want to Check Out" , MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.Yes)
                 {
                     MessageBox.Show("Order Confirmed");
@@ -78,16 +74,26 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             MainWindowItem.itemCart.Clear();
-            lstMainWawaReciept.Items.Clear();
-            itemCart.Clear();
+            itemCart.Clear() ;
         }
 
         private void btnHoagies_Click(object sender, RoutedEventArgs e)
         {
 
            Hoagies wnHoagies = new Hoagies(MainWindowItem);
-            wnHoagies.ShowDialog();
+           wnHoagies.ShowDialog();
             
+        }
+
+        private void btnDrinks_Click(object sender, RoutedEventArgs e)
+        {
+            Drinks wnDrinks = new Drinks(MainWindowItem);
+            wnDrinks.ShowDialog();
+        }
+
+        private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
