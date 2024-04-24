@@ -66,7 +66,6 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                     MessageBox.Show("Order Confirmed");
                     MainWindowItem.itemCart.Clear();
                     lstMainWawaReciept.Items.Clear();
-                    itemCart.Clear();
 
                 }
             }

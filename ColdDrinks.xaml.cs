@@ -77,7 +77,6 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void btnBackToMain_Click(object sender, RoutedEventArgs e)
         {
-            ColdDrinksWindowItem.itemCart = itemCart;
             wnColdDrinks.Close();
         }
 
