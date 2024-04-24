@@ -46,7 +46,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void Grid_MouseMove(object sender, MouseEventArgs e)
         {
-            lstMainWawaReciept.ItemsSource = MainWindowItem.GetItemCart();
+            lstMainWawaReciept.ItemsSource = MainWindowItem.GetItemCart().ToArray();
+            txtTotalPrice.Text ="Total: $" + MainWindowItem.GetPriceOfCart().ToString();
 
         }
 

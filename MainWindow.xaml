@@ -9,7 +9,7 @@
     <Grid Margin="0,-4,0,-2" Background="#FFA8A4A4" MouseMove="Grid_MouseMove">
         <ListBox x:Name="lstMainWawaReciept" HorizontalAlignment="Left" Height="408" Margin="650,60,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Background="White" SelectionChanged="lstMainWawaReciept_SelectionChanged"/>
         <Label x:Name="lblRecieptHeader" Content="              RECIEPT" HorizontalAlignment="Left"  Margin="650,10,0,0" VerticalAlignment="Top" Height="45" Width="293" FontSize="24" Background="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="62" Margin="650,473,0,0" TextWrapping="Wrap" Text="Total: $0.00" VerticalAlignment="Top" Width="293" FontSize="24" Background="White"/>
+        <TextBlock x:Name="txtTotalPrice" HorizontalAlignment="Left" Height="62" Margin="650,473,0,0" TextWrapping="Wrap" Text="Total: $0.00" VerticalAlignment="Top" Width="293" FontSize="24" Background="White"/>
         <Button x:Name="btnHoagies" Content="Hoagies" HorizontalAlignment="Left" Height="46" Margin="66,274,0,0" VerticalAlignment="Top" Width="121" Click="btnHoagies_Click"/>
         <Button x:Name="btnDrinks" Content="Drinks" HorizontalAlignment="Left" Height="46" Margin="66,345,0,0" VerticalAlignment="Top" Width="121" Click="btnDrinks_Click"/>
         <Button x:Name="btnSoupsNSides" Content="Soups and Sides" HorizontalAlignment="Left" Height="46" Margin="66,422,0,0" VerticalAlignment="Top" Width="121" Click="btnSoupsNSides_Click"/>
