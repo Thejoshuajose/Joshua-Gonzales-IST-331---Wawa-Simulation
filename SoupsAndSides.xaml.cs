@@ -118,37 +118,175 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnAddSoupsAndSides1_Click(object sender, RoutedEventArgs e)
         {
 
+            item1count += 1;
+            txtQuantitySoupsAndSides1.Text = item1count.ToString();
+            SoupsAndSidesWindowItem.AddToCart(itemNames[0], itemPrice[0]);
+
+
+            if (item1count == 0)
+            {
+                btnRemoveSoupsAndSides1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveSoupsAndSides1.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
+
         }
 
         private void btnRemoveSoupsAndSides1_Click(object sender, RoutedEventArgs e)
         {
 
+            if (item1count > 0)
+            {
+                item1count -= 1;
+                txtQuantitySoupsAndSides1.Text = item1count.ToString();
+                SoupsAndSidesWindowItem.RemoveFromCart(itemNames[0], itemPrice[0]);
+            }
+
+            if (item1count == 0)
+            {
+                btnRemoveSoupsAndSides1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveSoupsAndSides1.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
+
         }
+
         private void btnAddSoupsAndSides2_Click(object sender, RoutedEventArgs e)
         {
+
+            item2count += 1;
+            txtQuantitySoupsAndSides2.Text = item2count.ToString();
+            SoupsAndSidesWindowItem.AddToCart(itemNames[1], itemPrice[1]);
+
+            if (item2count == 0)
+            {
+                btnRemoveSoupsAndSides2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveSoupsAndSides2.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
 
         }
 
         private void btnRemoveSoupsAndSides2_Click(object sender, RoutedEventArgs e)
         {
 
+            if (item2count > 0)
+            {
+                item2count -= 1;
+                txtQuantitySoupsAndSides2.Text = item2count.ToString();
+                SoupsAndSidesWindowItem.RemoveFromCart(itemNames[1], itemPrice[1]);
+            }
+
+            if (item2count == 0)
+            {
+                btnRemoveSoupsAndSides2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveSoupsAndSides2.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
+
         }
+
         private void btnAddSoupsAndSides3_Click(object sender, RoutedEventArgs e)
         {
+
+            item3count += 1;
+            txtQuantitySoupsAndSides3.Text = item3count.ToString();
+            SoupsAndSidesWindowItem.AddToCart(itemNames[2], itemPrice[2]);
+
+
+            if (item3count == 0)
+            {
+                btnRemoveSoupsAndSides3.IsEnabled = false;
+            }
+            else if (item3count >= 1)
+            {
+                btnRemoveSoupsAndSides3.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
 
         }
 
         private void btnRemoveSoupsAndSides3_Click(object sender, RoutedEventArgs e)
         {
+            if (item3count > 0)
+            {
+                item3count -= 1;
+                txtQuantitySoupsAndSides3.Text = item3count.ToString();
+                SoupsAndSidesWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+
+            }
+
+            if (item3count == 0)
+            {
+                btnRemoveSoupsAndSides3.IsEnabled = false;
+            }
+
+            else if (item3count >= 1)
+            {
+                btnRemoveSoupsAndSides3.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
+
 
         }
+
         private void btnAddSoupsAndSides4_Click(object sender, RoutedEventArgs e)
         {
+
+            item4count += 1;
+            txtQuantitySoupsAndSides4.Text = item4count.ToString();
+            SoupsAndSidesWindowItem.AddToCart(itemNames[3], itemPrice[3]);
+
+            if (item4count == 0)
+            {
+                btnRemoveSoupsAndSides4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveSoupsAndSides4.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
 
         }
 
         private void btnRemoveSoupsAndSides4_Click(object sender, RoutedEventArgs e)
         {
+            if (item4count > 0)
+            {
+                item4count -= 1;
+                txtQuantitySoupsAndSides4.Text = item4count.ToString();
+                SoupsAndSidesWindowItem.RemoveFromCart(itemNames[3], itemPrice[3]);
+            }
+
+            if (item4count == 0)
+            {
+                btnRemoveSoupsAndSides4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveSoupsAndSides4.IsEnabled = true;
+            }
+
+            lstSoupsAndSidesWawaReciept.ItemsSource = SoupsAndSidesWindowItem.GetItemCart().ToArray();
 
         }
     }

@@ -120,43 +120,177 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnAddColdDrink1_Click(object sender, RoutedEventArgs e)
         {
 
+            item1count += 1;
+            txtQuantityColdDrink1.Text = item1count.ToString();
+            ColdDrinksWindowItem.AddToCart(itemNames[0], itemPrice[0]);
+
+
+            if (item1count == 0)
+            {
+                btnRemoveColdDrink1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveColdDrink1.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
+
         }
 
         private void btnRemoveColdDrink1_Click(object sender, RoutedEventArgs e)
         {
+
+            if (item1count > 0)
+            {
+                item1count -= 1;
+                txtQuantityColdDrink1.Text = item1count.ToString();
+                ColdDrinksWindowItem.RemoveFromCart(itemNames[0], itemPrice[0]);
+            }
+
+            if (item1count == 0)
+            {
+                btnRemoveColdDrink1.IsEnabled = false;
+            }
+            else if (item1count >= 1)
+            {
+                btnRemoveColdDrink1.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
 
         }
 
         private void btnAddColdDrink2_Click(object sender, RoutedEventArgs e)
         {
 
+            item2count += 1;
+            txtQuantityColdDrink2.Text = item2count.ToString();
+            ColdDrinksWindowItem.AddToCart(itemNames[1], itemPrice[1]);
+
+            if (item2count == 0)
+            {
+                btnRemoveColdDrink2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveColdDrink2.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
+
         }
 
         private void btnRemoveColdDrink2_Click(object sender, RoutedEventArgs e)
         {
+
+            if (item2count > 0)
+            {
+                item2count -= 1;
+                txtQuantityColdDrink2.Text = item2count.ToString();
+                ColdDrinksWindowItem.RemoveFromCart(itemNames[1], itemPrice[1]);
+            }
+
+            if (item2count == 0)
+            {
+                btnRemoveColdDrink2.IsEnabled = false;
+            }
+            else if (item2count >= 1)
+            {
+                btnRemoveColdDrink2.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
 
         }
 
         private void btnAddColdDrink3_Click(object sender, RoutedEventArgs e)
         {
 
+            item3count += 1;
+            txtQuantityColdDrink3.Text = item3count.ToString();
+            ColdDrinksWindowItem.AddToCart(itemNames[2], itemPrice[2]);
+
+
+            if (item3count == 0)
+            {
+                btnRemoveColdDrink3.IsEnabled = false;
+            }
+            else if (item3count >= 1)
+            {
+                btnRemoveColdDrink3.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
+
         }
 
         private void btnRemoveColdDrink3_Click(object sender, RoutedEventArgs e)
         {
+            if (item3count > 0)
+            {
+                item3count -= 1;
+                txtQuantityColdDrink3.Text = item3count.ToString();
+                ColdDrinksWindowItem.RemoveFromCart(itemNames[2], itemPrice[2]);
+
+            }
+
+            if (item3count == 0)
+            {
+                btnRemoveColdDrink3.IsEnabled = false;
+            }
+
+            else if (item3count >= 1)
+            {
+                btnRemoveColdDrink3.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
+
 
         }
 
         private void btnAddColdDrink4_Click(object sender, RoutedEventArgs e)
         {
 
+            item4count += 1;
+            txtQuantityColdDrink4.Text = item4count.ToString();
+            ColdDrinksWindowItem.AddToCart(itemNames[3], itemPrice[3]);
+
+            if (item4count == 0)
+            {
+                btnRemoveColdDrink4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveColdDrink4.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
+
         }
 
         private void btnRemoveColdDrink4_Click(object sender, RoutedEventArgs e)
         {
+            if (item4count > 0)
+            {
+                item4count -= 1;
+                txtQuantityColdDrink4.Text = item4count.ToString();
+                ColdDrinksWindowItem.RemoveFromCart(itemNames[3], itemPrice[3]);
+            }
+
+            if (item4count == 0)
+            {
+                btnRemoveColdDrink4.IsEnabled = false;
+            }
+            else if (item4count >= 1)
+            {
+                btnRemoveColdDrink4.IsEnabled = true;
+            }
+
+            lstColdDrinkWawaReciept.ItemsSource = ColdDrinksWindowItem.GetItemCart().ToArray();
 
         }
 
-        
     }
 }

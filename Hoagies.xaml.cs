@@ -77,7 +77,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
 
         private void btnBackToMain_Click(object sender, RoutedEventArgs e)
         {
-            HoagieWindowItem.itemCart = itemCart;
+           
             wnHoagies.Close();
             
         }
@@ -136,7 +136,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie1.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -159,7 +159,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie1.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -179,7 +179,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie2.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -202,7 +202,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie2.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -223,7 +223,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie3.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -247,7 +247,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie3.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
 
         }
@@ -268,7 +268,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie4.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
 
@@ -290,7 +290,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 btnRemoveHoagie4.IsEnabled = true;
             }
 
-            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart();
+            lstHoagieWawaReciept.ItemsSource = HoagieWindowItem.GetItemCart().ToArray();
 
         }
     }
