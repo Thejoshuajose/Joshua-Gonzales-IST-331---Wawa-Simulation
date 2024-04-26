@@ -45,8 +45,9 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnColdBeverages_Click(object sender, RoutedEventArgs e)
         {
             ColdDrinks wnColdDrinks = new ColdDrinks(DrinksWindowItem);
-            wnDrinks.Hide();
+            wnDrinks.Visibility = Visibility.Hidden;
             wnColdDrinks.ShowDialog();
+            wnDrinks.Visibility = Visibility.Visible;
             wnDrinks.BringIntoView();
 
         }
@@ -54,10 +55,10 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnHotBeverages_Click(object sender, RoutedEventArgs e)
         {
             HotDrinks wnHotDrinks = new HotDrinks(DrinksWindowItem);
-            wnDrinks.Hide();
+            wnDrinks.Visibility = Visibility.Hidden;
             wnHotDrinks.ShowDialog();
+            wnDrinks.Visibility = Visibility.Visible;
             wnDrinks.BringIntoView();
-
 
         }
     }

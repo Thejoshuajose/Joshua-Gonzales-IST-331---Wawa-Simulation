@@ -76,6 +76,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             MainWindowItem.itemCart.Clear();
+            MainWindowItem.itemPriceCart.Clear();
+            MainWindowItem.ClearPriceCart();
             itemCart.Clear() ;
         }
 
@@ -83,25 +85,49 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
 
            Hoagies wnHoagies = new Hoagies(MainWindowItem);
-            wnWawaSimulation.Hide();
+            wnWawaSimulation.Visibility = Visibility.Hidden;
             wnHoagies.ShowDialog();
-            wnWawaSimulation.Visibility = Visibility.Visible;
+            if (wnHoagies.IsActive)
+            {
+                wnWawaSimulation.Visibility = Visibility.Visible;
+                wnWawaSimulation.Show();
+            }
+            else
+            {
+                wnWawaSimulation.Visibility = Visibility.Hidden;
+            }
         }
 
         private void btnDrinks_Click(object sender, RoutedEventArgs e)
         {
             Drinks wnDrinks = new Drinks(MainWindowItem);
-            wnWawaSimulation.Hide();
+            wnWawaSimulation.Visibility = Visibility.Hidden;
             wnDrinks.ShowDialog();
-            wnWawaSimulation.BringIntoView();
+            if (wnDrinks.IsActive)
+            {
+                wnWawaSimulation.Visibility = Visibility.Visible;
+                wnWawaSimulation.Show();
+            }
+            else
+            {
+                wnWawaSimulation.Visibility = Visibility.Hidden;
+            }
         }
 
         private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
         {
             SoupsAndSides wnSoupsAndSides = new SoupsAndSides(MainWindowItem);
-            wnWawaSimulation.Hide();
+            wnWawaSimulation.Visibility = Visibility.Hidden;
             wnSoupsAndSides.ShowDialog();
-            wnWawaSimulation.s();
+            if (!wnSoupsAndSides.IsActive)
+            {
+                wnWawaSimulation.Visibility = Visibility.Visible;
+                wnWawaSimulation.Show();
+            }
+            else
+            { 
+                wnWawaSimulation.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
