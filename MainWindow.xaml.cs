@@ -60,7 +60,14 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
             if (MainWindowItem.itemCart.Count != 0)
             {
-                MessageBoxResult result = MessageBox.Show("Checkout with: \n" + MainWindowItem.GetItemCart().ToArray().ToString(), "Do You Want to Check Out" , MessageBoxButton.YesNo);
+                StringBuilder stringBuilder = new StringBuilder();
+
+                for (int i =0; i<lstMainWawaReciept.Items.Count; i++)
+                {
+                    stringBuilder.Append(MainWindowItem.itemCart[i]);
+                    stringBuilder.Append("\n");
+                }
+                MessageBoxResult result = MessageBox.Show("Checkout with: \n \n" + stringBuilder + "\n" +txtTotalPrice.Text, "Do You Want to Check Out" , MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.Yes)
                 {
                     MessageBox.Show("Order #"+ MainWindowItem.itemCart.Count + " Confirmed");
@@ -84,10 +91,10 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnHoagies_Click(object sender, RoutedEventArgs e)
         {
 
-           Hoagies wnHoagies = new Hoagies(MainWindowItem);
+            Hoagies wnHoagies = new Hoagies(MainWindowItem);
             wnWawaSimulation.Visibility = Visibility.Hidden;
             wnHoagies.ShowDialog();
-            if (wnHoagies.IsActive)
+            if (!wnHoagies.IsActive)
             {
                 wnWawaSimulation.Visibility = Visibility.Visible;
                 wnWawaSimulation.Show();
@@ -103,15 +110,10 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
             Drinks wnDrinks = new Drinks(MainWindowItem);
             wnWawaSimulation.Visibility = Visibility.Hidden;
             wnDrinks.ShowDialog();
-            if (wnDrinks.IsActive)
-            {
-                wnWawaSimulation.Visibility = Visibility.Visible;
-                wnWawaSimulation.Show();
-            }
-            else
-            {
-                wnWawaSimulation.Visibility = Visibility.Hidden;
-            }
+            wnWawaSimulation.Visibility = Visibility.Visible;
+            wnWawaSimulation.Show();
+            wnDrinks.Close();
+            
         }
 
         private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
