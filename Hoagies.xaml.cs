@@ -92,6 +92,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg1.EndInit();
                 imgHoagie1.Stretch = Stretch.UniformToFill;
                 imgHoagie1.Source = hoagieImg1;
+                txtHoagie1.Text = itemNames[0] + ": $" + itemPrice[0];
 
                 BitmapImage hoagieImg2 = new BitmapImage();
                 hoagieImg2.BeginInit();
@@ -99,6 +100,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg2.EndInit();
                 imgHoagie2.Stretch = Stretch.UniformToFill;
                 imgHoagie2.Source = hoagieImg2;
+                txtHoagie2.Text = itemNames[1] + ": $" + itemPrice[1];
+
 
                 BitmapImage hoagieImg3 = new BitmapImage();
                 hoagieImg3.BeginInit();
@@ -106,6 +109,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg3.EndInit();
                 imgHoagie3.Stretch = Stretch.UniformToFill;
                 imgHoagie3.Source = hoagieImg3;
+                txtHoagie3.Text = itemNames[2] + ": $" + itemPrice[2];
+
 
                 BitmapImage hoagieImg4 = new BitmapImage();
                 hoagieImg4.BeginInit();
@@ -113,6 +118,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 hoagieImg4.EndInit();
                 imgHoagie4.Stretch = Stretch.UniformToFill;
                 imgHoagie4.Source = hoagieImg4;
+                txtHoagie4.Text = itemNames[3] + ": $" + itemPrice[3];
+
 
                 txtHoagieTotal.Text = "Total: $" + HoagieWindowItem.GetPriceOfCart();
             }

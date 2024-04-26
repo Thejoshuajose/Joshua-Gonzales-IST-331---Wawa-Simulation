@@ -7,22 +7,26 @@
         mc:Ignorable="d"
         Title="ColdDrinks" Height="450" Width="800" Background="#FF575757" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="CanResizeWithGrip">
     <Grid MouseMove="Grid_MouseMove">
-        <Image x:Name="imgColdDrink1" HorizontalAlignment="Left" Height="126" Margin="49,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
-        <Image x:Name="imgColdDrink2" HorizontalAlignment="Left" Height="126" Margin="228,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
-        <Image x:Name="imgColdDrink4" HorizontalAlignment="Left" Height="126" Margin="228,219,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
-        <Image x:Name="imgColdDrink3" HorizontalAlignment="Left" Height="126" Margin="49,220,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
-        <Button x:Name="btnRemoveColdDrink1" Content="Remove" HorizontalAlignment="Left" Margin="135,180,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink1_Click"/>
-        <Button x:Name="btnAddColdDrink1" Content="Add" HorizontalAlignment="Left" Margin="49,180,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink1_Click"/>
-        <TextBox x:Name="txtQuantityColdDrink1" HorizontalAlignment="Left" Height="20" Margin="93,180,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
-        <Button x:Name="btnRemoveColdDrink2" Content="Remove" HorizontalAlignment="Left" Margin="312,180,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink2_Click"/>
-        <Button x:Name="btnAddColdDrink2" Content="Add" HorizontalAlignment="Left" Margin="226,180,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink2_Click"/>
-        <TextBox x:Name="txtQuantityColdDrink2" HorizontalAlignment="Left" Height="20" Margin="270,180,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
-        <Button x:Name="btnRemoveColdDrink4" Content="Remove" HorizontalAlignment="Left" Margin="312,352,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink4_Click"/>
-        <Button x:Name="btnAddColdDrink4" Content="Add" HorizontalAlignment="Left" Margin="226,352,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink4_Click"/>
-        <TextBox x:Name="txtQuantityColdDrink4" HorizontalAlignment="Left" Height="20" Margin="270,352,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
-        <Button x:Name="btnRemoveColdDrink3" Content="Remove" HorizontalAlignment="Left" Margin="133,352,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink3_Click"/>
-        <Button x:Name="btnAddColdDrink3" Content="Add" HorizontalAlignment="Left" Margin="47,352,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink3_Click"/>
-        <TextBox x:Name="txtQuantityColdDrink3" HorizontalAlignment="Left" Height="20" Margin="91,352,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
+        <Image x:Name="imgColdDrink1" HorizontalAlignment="Left" Height="126" Margin="51,43,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
+        <Image x:Name="imgColdDrink2" HorizontalAlignment="Left" Height="126" Margin="226,43,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
+        <Image x:Name="imgColdDrink4" HorizontalAlignment="Left" Height="126" Margin="228,237,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
+        <Image x:Name="imgColdDrink3" HorizontalAlignment="Left" Height="126" Margin="49,238,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
+        <TextBox x:Name="txtColdDrink1" HorizontalAlignment="Left" Height="17" Margin="49,21,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="txtColdDrink2" HorizontalAlignment="Left" Height="17" Margin="226,21,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="txtColdDrink4" HorizontalAlignment="Left" Height="17" Margin="232,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="txtColdDrink3" HorizontalAlignment="Left" Height="17" Margin="51,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="126"/>
+        <Button x:Name="btnRemoveColdDrink1" Content="Remove" HorizontalAlignment="Left" Margin="133,169,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink1_Click"/>
+        <Button x:Name="btnAddColdDrink1" Content="Add" HorizontalAlignment="Left" Margin="47,169,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink1_Click"/>
+        <TextBox x:Name="txtQuantityColdDrink1" HorizontalAlignment="Left" Height="20" Margin="91,169,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
+        <Button x:Name="btnRemoveColdDrink2" Content="Remove" HorizontalAlignment="Left" Margin="310,169,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink2_Click"/>
+        <Button x:Name="btnAddColdDrink2" Content="Add" HorizontalAlignment="Left" Margin="224,169,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink2_Click"/>
+        <TextBox x:Name="txtQuantityColdDrink2" HorizontalAlignment="Left" Height="20" Margin="268,169,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
+        <Button x:Name="btnRemoveColdDrink4" Content="Remove" HorizontalAlignment="Left" Margin="312,370,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink4_Click"/>
+        <Button x:Name="btnAddColdDrink4" Content="Add" HorizontalAlignment="Left" Margin="226,370,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink4_Click"/>
+        <TextBox x:Name="txtQuantityColdDrink4" HorizontalAlignment="Left" Height="20" Margin="270,370,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
+        <Button x:Name="btnRemoveColdDrink3" Content="Remove" HorizontalAlignment="Left" Margin="133,370,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoveColdDrink3_Click"/>
+        <Button x:Name="btnAddColdDrink3" Content="Add" HorizontalAlignment="Left" Margin="47,370,0,0" VerticalAlignment="Top" Width="44" Click="btnAddColdDrink3_Click"/>
+        <TextBox x:Name="txtQuantityColdDrink3" HorizontalAlignment="Left" Height="20" Margin="91,370,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42" TextAlignment="Center" Focusable="False"/>
         <ListBox x:Name="lstColdDrinkWawaReciept" HorizontalAlignment="Left" Height="336" Margin="507,43,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Background="White"/>
         <Label x:Name="lblRecieptHeader" Content="              RECIEPT" HorizontalAlignment="Left"  Margin="507,2,0,0" VerticalAlignment="Top" Height="38" Width="293" FontSize="24" Background="White"/>
         <TextBlock x:Name="txtColdDrinkTotal" HorizontalAlignment="Left" Height="41" Margin="507,383,0,0" TextWrapping="Wrap" Text="Total: $0.00" VerticalAlignment="Top" Width="293" FontSize="24" Background="White"/>

@@ -90,6 +90,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 coldDrinkImg1.EndInit();
                 imgColdDrink1.Stretch = Stretch.UniformToFill;
                 imgColdDrink1.Source = coldDrinkImg1;
+                txtColdDrink1.Text = itemNames[0] + ": $" + itemPrice[0];
+
 
                 BitmapImage coldDrinkImg2 = new BitmapImage();
                 coldDrinkImg2.BeginInit();
@@ -97,6 +99,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 coldDrinkImg2.EndInit();
                 imgColdDrink2.Stretch = Stretch.UniformToFill;
                 imgColdDrink2.Source = coldDrinkImg2;
+                txtColdDrink2.Text = itemNames[1] + ": $" + itemPrice[1];
+
 
                 BitmapImage coldDrinkImg3 = new BitmapImage();
                 coldDrinkImg3.BeginInit();
@@ -104,6 +108,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 coldDrinkImg3.EndInit();
                 imgColdDrink3.Stretch = Stretch.UniformToFill;
                 imgColdDrink3.Source = coldDrinkImg3;
+                txtColdDrink3.Text = itemNames[2] + ": $" + itemPrice[2];
+
 
                 BitmapImage coldDrinkImg4 = new BitmapImage();
                 coldDrinkImg4.BeginInit();
@@ -111,6 +117,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 coldDrinkImg4.EndInit();
                 imgColdDrink4.Stretch = Stretch.UniformToFill;
                 imgColdDrink4.Source = coldDrinkImg4;
+                txtColdDrink4.Text = itemNames[3] + ": $" + itemPrice[3];
+
 
                 txtColdDrinkTotal.Text = "Total: $" + ColdDrinksWindowItem.GetPriceOfCart();
             }

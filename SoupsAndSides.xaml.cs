@@ -88,6 +88,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 soupsAndSidesImg1.EndInit();
                 imgSoupsAndSides1.Stretch = Stretch.UniformToFill;
                 imgSoupsAndSides1.Source = soupsAndSidesImg1;
+                txtSoupsAndSides1.Text = itemNames[0] + ": $" + itemPrice[0];
+
 
                 BitmapImage soupsAndSidesImg2 = new BitmapImage();
                 soupsAndSidesImg2.BeginInit();
@@ -95,6 +97,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 soupsAndSidesImg2.EndInit();
                 imgSoupsAndSides2.Stretch = Stretch.UniformToFill;
                 imgSoupsAndSides2.Source = soupsAndSidesImg2;
+                txtSoupsAndSides2.Text = itemNames[1] + ": $" + itemPrice[1];
+
 
                 BitmapImage soupsAndSidesImg3 = new BitmapImage();
                 soupsAndSidesImg3.BeginInit();
@@ -102,6 +106,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 soupsAndSidesImg3.EndInit();
                 imgSoupsAndSides3.Stretch = Stretch.UniformToFill;
                 imgSoupsAndSides3.Source = soupsAndSidesImg3;
+                txtSoupsAndSides3.Text = itemNames[2] + ": $" + itemPrice[2];
+
 
                 BitmapImage soupsAndSidesImg4 = new BitmapImage();
                 soupsAndSidesImg4.BeginInit();
@@ -109,6 +115,8 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
                 soupsAndSidesImg4.EndInit();
                 imgSoupsAndSides4.Stretch = Stretch.UniformToFill;
                 imgSoupsAndSides4.Source = soupsAndSidesImg4;
+                txtSoupsAndSides4.Text = itemNames[3] + ": $" + itemPrice[3];
+
 
                 txtSoupsAndSidesTotal.Text = "Total: $" + SoupsAndSidesWindowItem.GetPriceOfCart();
             }
