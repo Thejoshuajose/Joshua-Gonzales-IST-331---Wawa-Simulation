@@ -134,5 +134,9 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
             itemType = type;
         }
 
+        public void ClearPriceCart()
+        {
+            itemPriceOfCart = 0;
+        }
     }
 }

@@ -45,14 +45,20 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         private void btnColdBeverages_Click(object sender, RoutedEventArgs e)
         {
             ColdDrinks wnColdDrinks = new ColdDrinks(DrinksWindowItem);
+            wnDrinks.Hide();
             wnColdDrinks.ShowDialog();
+            wnDrinks.BringIntoView();
+
         }
 
         private void btnHotBeverages_Click(object sender, RoutedEventArgs e)
         {
             HotDrinks wnHotDrinks = new HotDrinks(DrinksWindowItem);
+            wnDrinks.Hide();
             wnHotDrinks.ShowDialog();
-            
+            wnDrinks.BringIntoView();
+
+
         }
     }
 }

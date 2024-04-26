@@ -34,7 +34,7 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
             InitializeComponent();
         }
 
-
+        
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you Sure?", "Do you want to Exit?", MessageBoxButton.YesNo);
@@ -60,12 +60,14 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
             if (MainWindowItem.itemCart.Count != 0)
             {
-                MessageBoxResult result = MessageBox.Show("Checkout with: \n" + MainWindowItem.GetItemCart().ToString(), "Do You Want to Check Out" , MessageBoxButton.YesNo);
+                MessageBoxResult result = MessageBox.Show("Checkout with: \n" + MainWindowItem.GetItemCart().ToArray().ToString(), "Do You Want to Check Out" , MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.Yes)
                 {
-                    MessageBox.Show("Order Confirmed");
+                    MessageBox.Show("Order #"+ MainWindowItem.itemCart.Count + " Confirmed");
                     MainWindowItem.itemCart.Clear();
-                    lstMainWawaReciept.Items.Clear();
+                    MainWindowItem.itemPriceCart.Clear();
+                    MainWindowItem.ClearPriceCart();
+                    txtTotalPrice.Text = "Total: $0";
 
                 }
             }
@@ -81,20 +83,28 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
 
            Hoagies wnHoagies = new Hoagies(MainWindowItem);
-           wnHoagies.ShowDialog();
-            
+            wnWawaSimulation.Opacity = (0);
+            wnHoagies.ShowDialog();
+            wnWawaSimulation.Opacity = (1);
+            wnWawaSimulation.BringIntoView();
         }
 
         private void btnDrinks_Click(object sender, RoutedEventArgs e)
         {
             Drinks wnDrinks = new Drinks(MainWindowItem);
+            wnWawaSimulation.Opacity=(0);
             wnDrinks.ShowDialog();
+            wnWawaSimulation.Opacity = (1);
+            wnWawaSimulation.BringIntoView();
         }
 
         private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
         {
             SoupsAndSides wnSoupsAndSides = new SoupsAndSides(MainWindowItem);
+            wnWawaSimulation.Opacity = (0);
             wnSoupsAndSides.ShowDialog();
+            wnWawaSimulation.Opacity = (1);
+            wnWawaSimulation.BringIntoView();
         }
     }
 }

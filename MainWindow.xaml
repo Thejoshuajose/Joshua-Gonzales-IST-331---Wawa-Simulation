@@ -14,7 +14,7 @@
         <Button x:Name="btnDrinks" Content="Drinks" HorizontalAlignment="Left" Height="46" Margin="66,345,0,0" VerticalAlignment="Top" Width="121" Click="btnDrinks_Click"/>
         <Button x:Name="btnSoupsNSides" Content="Soups and Sides" HorizontalAlignment="Left" Height="46" Margin="66,422,0,0" VerticalAlignment="Top" Width="121" Click="btnSoupsNSides_Click"/>
         <Image Margin="66,-40,323,272" Source="/WawaEmblem.png" Stretch="Fill"/>
-        <Button x:Name="btnCheckOut" Content="Checkout" HorizontalAlignment="Left" Height="46" Margin="490,269,0,0" VerticalAlignment="Top" Width="122" Click="btnCheckOut_Click"/>
+        <Button x:Name="btnCheckOut" Content="Checkout" HorizontalAlignment="Left" Height="46" Margin="490,269,0,0" VerticalAlignment="Top" Width="122" Click="btnCheckOut_Click" RenderTransformOrigin="0.414,0.555"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="46" Margin="490,419,0,0" VerticalAlignment="Top" Width="122" Click="btnExit_Click"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Height="46" Margin="490,340,0,0" VerticalAlignment="Top" Width="122" Click="btnClear_Click"/>
     </Grid>
