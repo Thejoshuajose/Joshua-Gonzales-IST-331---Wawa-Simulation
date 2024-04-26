@@ -83,28 +83,25 @@ namespace Joshua_Gonzales___IST_331___Wawa_Simulation
         {
 
            Hoagies wnHoagies = new Hoagies(MainWindowItem);
-            wnWawaSimulation.Opacity = (0);
+            wnWawaSimulation.Hide();
             wnHoagies.ShowDialog();
-            wnWawaSimulation.Opacity = (1);
-            wnWawaSimulation.BringIntoView();
+            wnWawaSimulation.Visibility = Visibility.Visible;
         }
 
         private void btnDrinks_Click(object sender, RoutedEventArgs e)
         {
             Drinks wnDrinks = new Drinks(MainWindowItem);
-            wnWawaSimulation.Opacity=(0);
+            wnWawaSimulation.Hide();
             wnDrinks.ShowDialog();
-            wnWawaSimulation.Opacity = (1);
             wnWawaSimulation.BringIntoView();
         }
 
         private void btnSoupsNSides_Click(object sender, RoutedEventArgs e)
         {
             SoupsAndSides wnSoupsAndSides = new SoupsAndSides(MainWindowItem);
-            wnWawaSimulation.Opacity = (0);
+            wnWawaSimulation.Hide();
             wnSoupsAndSides.ShowDialog();
-            wnWawaSimulation.Opacity = (1);
-            wnWawaSimulation.BringIntoView();
+            wnWawaSimulation.s();
         }
     }
 }

@@ -1,4 +1,4 @@
 Chicken Noodle Soup ~ Sides ~ Soup with Chicken and noodles ~5.00 ~ItemImages/chickenNoodleSoup.jpg
 Mac N Cheese ~ Sides ~ 3 Cheese Mac and Cheese ~ 2.00 ~ItemImages/macNcheese.jpg
 Fries ~ Sides ~ French Fries ~ 1.50 ~ItemImages/frenchFries.jpg
-Coleslaw ~ Sides ~ Mixed Veggies with Vinaigrette ~ 3.00 ~ItemImages/coleSlaw.jpg
+Red Peas Soup ~ Sides ~ Soup with red peas ~ 3.00 ~ItemImages/redPeasSoup.jpg
