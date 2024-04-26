@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
         mc:Ignorable="d"
-        Title="Drinks" Height="450" Width="800">
+        Title="Drinks" Height="450" Width="800" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FF575757">
     <Grid>
         <Button x:Name="btnBackToMain" Content="Back" Height="31" Margin="672,378,69,0" VerticalAlignment="Top" Click="btnBackToMain_Click"/>
         <Button x:Name="btnColdBeverages" Content="Cold Beverages" HorizontalAlignment="Left" Height="31" Margin="351,378,0,0" VerticalAlignment="Top" Width="201" Click="btnColdBeverages_Click"/>

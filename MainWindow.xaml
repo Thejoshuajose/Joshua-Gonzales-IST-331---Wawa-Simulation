@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
         mc:Ignorable="d"
-        Title="Gonzales _ Wawa Simulation" Height="555" Width="943" ResizeMode="NoResize">
+        Title="Gonzales _ Wawa Simulation" Height="555" Width="943" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FF575757">
     <Grid Margin="0,-4,0,-2" Background="#FFA8A4A4" MouseMove="Grid_MouseMove">
         <ListBox x:Name="lstMainWawaReciept" HorizontalAlignment="Left" Height="408" Margin="650,60,0,0" VerticalAlignment="Top" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Background="White" SelectionChanged="lstMainWawaReciept_SelectionChanged"/>
         <Label x:Name="lblRecieptHeader" Content="              RECIEPT" HorizontalAlignment="Left"  Margin="650,10,0,0" VerticalAlignment="Top" Height="45" Width="293" FontSize="24" Background="White"/>

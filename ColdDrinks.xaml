@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Joshua_Gonzales___IST_331___Wawa_Simulation"
         mc:Ignorable="d"
-        Title="ColdDrinks" Height="450" Width="800">
+        Title="ColdDrinks" Height="450" Width="800" Background="#FF575757" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="CanResizeWithGrip">
     <Grid MouseMove="Grid_MouseMove">
         <Image x:Name="imgColdDrink1" HorizontalAlignment="Left" Height="126" Margin="49,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
         <Image x:Name="imgColdDrink2" HorizontalAlignment="Left" Height="126" Margin="228,38,0,0" VerticalAlignment="Top" Width="126" Source="/WawaEmblem.png"/>
